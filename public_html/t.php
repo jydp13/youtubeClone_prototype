@@ -1,0 +1,1 @@
+<?php if ($test['likes']>0){echo $test['likes']." Likes";} else { echo "0 Likes";}?>

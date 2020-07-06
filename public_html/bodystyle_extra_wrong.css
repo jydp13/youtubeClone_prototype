@@ -1,0 +1,31 @@
+#contant {
+    width: 98.50%;
+    background-color: white;
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-left: 10px;
+
+}
+#watch_contant{
+  float:left;
+  width:73%;
+  margin-left: 5px; 
+  border-radius: 8px; 
+  position: absolute; 
+  background-color: white; 
+  margin-top: 10px;
+  padding: 0px;
+}
+#watch_contant_1{
+  padding: 0px;
+  margin-left: 5px;
+  float: left; 
+  width: 70%;
+}
+#innercontant{
+	width: 210px;
+	height: 150px;
+    background-color: yellow;
+    padding: 10px;
+    border-radius: 8px;
+}

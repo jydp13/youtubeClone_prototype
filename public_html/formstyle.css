@@ -1,0 +1,82 @@
+input[type=text],input[type=password],select{
+    width: 247px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+#b{
+	margin: auto;
+    width:18%;
+    padding: 0px;
+}
+input[type=submit]{
+  background-color: #0693cd;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  font-size:16px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  line-height: 1.4;
+  padding: 10px;
+  width: 247px;
+  color: white;
+  font-family: Simplifica;
+   font-weight: bold;
+}
+#signup{
+  background-color: #0693cd;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  font-size:16px;
+  font-weight: bold;
+  line-height: 1.4;
+  padding: 10px;
+  width: 375px;
+  color: white;
+  align-items: center;
+}
+#search{
+	 width: 80%;
+    height: 31px;
+    margin-right: 0px;
+    padding-right: 0px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    box-sizing: border-box;
+
+}
+a{
+	color: blue;
+text-decoration: none;
+
+}
+#searchbutton{
+	width: 20%;
+	height: 31px;
+	 background-color: white;
+	 color: #322849;
+	  padding: 0px;
+    margin: 0px;
+    border:solid 0.50px;
+    border-color: #ccc;
+   border-radius: 0px;
+   height: 30px;
+   font-family: Simplifica;
+   font-weight: bold;
+
+}
+@media only screen and (max-width: 690px) {
+  #search{
+    width: 50%;
+  }
+  #searchbutton{
+    width: 50%;
+}

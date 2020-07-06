@@ -1,0 +1,44 @@
+<script>
+ function validateForm() {
+    var a = document.forms["signin"]["emailid"].value;
+    var b = document.forms["signin"]["password1"].value;
+    if (a == "") {
+        alert("Please provide your ragistered e-mail");
+        return false;
+    }
+    else if (b == "") {
+        alert("Please enter your account password");
+        return false;
+    }
+  var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+
+if (reg.test(signin.emailid.value) == false) 
+{
+	alert('Invalid email address format');
+	signin.emailid.focus();	
+	return false;
+}
+return true;
+}
+ 
+</script>
+<br><br><br><br>
+<form action="index.php" method="post" onsubmit="return validateForm()" name="signin" enctype="multipart/form-data">
+ <table align="center">
+     <tr><td>Email Id</td></tr>
+     <tr>
+     <td><input type="text" name="emailid" ></td>
+    </tr>
+    <tr>
+    <td>Password</td>
+    </tr>
+     <tr>
+     <td><input type="password"  name="password1" id="pass" autocomplete="off"></td>
+    </tr>
+ </table>
+<div id="b">
+    <input type="submit" value="Sign In" ></input></a><br><br>
+    <a href="http://localhost:2000?category=account&page=signup" id="signupbutton" >Sign Up</a><br><br>
+    <a href="http://localhost:2000?category=account&password=reset" id="resetpassword" >Forget Password</a>	
+</div>
+</form>

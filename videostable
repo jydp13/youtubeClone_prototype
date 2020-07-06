@@ -1,0 +1,1 @@
+create table video(id int not null auto_increment,filename varchar(50),size int,title varchar(50),discription varchar(100),category varchar(15),sub_category varchar(15),directory varchar(30),date date ,primary key(id));

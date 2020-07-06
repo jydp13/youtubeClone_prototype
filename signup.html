@@ -1,0 +1,77 @@
+<script>
+  function validateForm() {
+    var a = document.forms["signup"]["firstname"].value;
+    var b = document.forms["signup"]["lastname"].value;
+    var c = document.forms["signup"]["mobileno"].value;
+    var d = document.forms["signup"]["emailid"].value;
+    var e = document.forms["signup"]["password1"].value;
+    var f = document.forms["signup"]["password2"].value;
+    if (a == "") {
+        alert("Please provide your firstname");
+        return false;
+    }
+    else if (b == "") {
+        alert("Please provide your lastname");
+        return false;
+    }
+    /*
+    else if (c == "") {
+        alert("Please provide your valid mobile number");
+        return false;
+    }
+    */
+    else if (d == "") {
+        alert("Please provide your valid e-mail id");
+        return false;
+    }
+     else if (e == "") {
+        alert("Please enter password for protecting your account");
+        return false;
+    }
+    else if (f == "") {
+        alert("Please re enter your password");
+        return false;
+    }
+     if (e != f) {
+        alert("Your password does not match");
+        return false;
+    }
+    var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+    if (reg.test(d) == false) 
+    {
+	  alert('Invalid email address format');
+	  signup.emailid.focus();	
+	  return false;
+    }
+    return true;
+}
+</script>
+<div id="body">
+<form action="signup.php" method="post" name="signup">
+
+ <table id="signuptable" align="center">
+   <tr>
+     <td>First Name</td><td><input type="text"  name="firstname" autocomplete="off"></td>
+    </tr>
+    <tr>
+     <td>Last Name</td><td><input type="text"  name="lastname" autocomplete="off"></td>
+    </tr> 
+    <!-- <tr>
+     <td>Mobile No</td><td><input type="text" name="mobileno" autocomplete="off"></td>
+    </tr>
+    -->
+     <tr>
+     <td>Email Id</td><td><input type="text" name="emailid" autocomplete="off"></td>
+    </tr>
+     <tr>
+     <td>Password</td><td><input type="password"  name="password1"></td>
+    </tr>
+     <tr>
+     <td>Confirm Password</td><td><input type="password"  name="password2"></td>
+    </tr>
+ </table>
+ <div align="center">
+ <input type="submit" value="Sign Up" id="signup" onclick="validateForm()">
+ </div>
+ </div>
+</form>
